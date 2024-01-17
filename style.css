@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --Dark-cyan: #19a2ae;
+    --Light-cyan: #98eff7;
+    --Very-dark-desaturated-blue: #2e3347;
+    --Dark-gray: #969696;
+    --Gray-border: #96969629;
+    --Dark-grayish-blue: #6b7082;
+    --Blue: #3e52a3;
+    --White: #ffffff;
+    --Font-Kumbh-Sans: 'Kumbh Sans';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+    font-size: 1em;
+}
+body{
+    height:100vh;   /* 100% of the viewport height */
+    display:flex;   /*flex container */
+    flex-direction: column; /*vertical */
+    align-items: center;    /* X */
+    justify-content: center;    /* Y */
+    background-color: var(--Dark-cyan);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 53vw bottom 27vh, left 48vw top 52vh;
+}
+
+.main-component{
+    background-color: var(--White);
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.1),  /* First layer */
+    0px 18px 40px rgba(0, 0, 0, 0.1); 
+}
+
+.profile-background > img{
+    height: 140px;
+    border-radius:15px 15px 0 0;
+    width: 350px;
+}
+
+.profile-pic{
+    width: 106px;
+    border: 5px solid var(--White);
+    border-radius: 50%;
+    position: absolute;
+    top: 95px;
+}
+
+.name {
+    display: flex;
+    gap: 8px;
+    margin: 3.5em auto .3em;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.name > strong {
+    color: var(--Dark-gray);
+    font-weight: 600;
+}
+
+.location{
+    font-size: .9em;
+    color: var(--Dark-gray);
+    font-weight: 600;
+    padding-bottom: 1.7em;
+}
+
+.info{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--Gray-border);
+}
+
+.data {
+    padding: .4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.numbers {
+    font-size: 1.1em;
+}
+
+.description{
+    color: var(--Dark-gray);
+    font-size: .6em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.attribution{
+    font-size: .7em;
+    padding: 1.5em;
+    color: var(--White)
+}
+.attribution > a{
+    color: var(--Light-cyan);
+    text-decoration: none;
+}
+.attribution > a:hover{
+    text-decoration: underline;
+    color: var(--White);
+}
